@@ -7,7 +7,7 @@ export function Home({ setPage }) {
     <div className='Home'>
     <section className="Home-container">
       <div className="Home-hero">
-        <h1 className="Home-title">Feliz Cumpleaños, mi amor</h1>
+        <h1 className="Home-title">Feliz Cumpleaños mi Princesa :D</h1>
         <p className="Home-subtitle">
           Te hice una pequeña página para celebrar tu día tan especial,
           espero que lo disfrutes y te diviertaaaas un ratito!

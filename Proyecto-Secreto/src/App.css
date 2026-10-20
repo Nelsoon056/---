@@ -817,3 +817,133 @@ nav {
     padding: 1.2rem;
   }
 }
+
+/* ==========================================
+   Sección Carta (Letter)
+   ========================================== */
+.Letter-container {
+  min-height: calc(100vh - 70px);
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  box-sizing: border-box;
+  animation: fadeIn 0.6s ease-out;
+}
+
+.Letter-card {
+  background: var(--white);
+  border-radius: 20px;
+  padding: 3rem 3.5rem;
+  width: 100%;
+  box-shadow: 0 15px 35px rgba(47, 65, 86, 0.12),
+              0 5px 15px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(200, 217, 230, 0.8);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  background-image: linear-gradient(rgba(200, 217, 230, 0.1) 1px, transparent 1px);
+  background-size: 100% 2rem; /* Sutiles líneas de hoja de carta */
+}
+
+/* Sello / Sobre en la parte superior */
+.Letter-stamp {
+  font-size: 2.8rem;
+  background: var(--bg-warm);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px dashed var(--primary-medium);
+  box-shadow: 0 4px 10px rgba(47, 65, 86, 0.08);
+}
+
+.Letter-title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--primary-dark);
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+/* Cuerpo de la Carta */
+.Letter-body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  font-size: 1.05rem;
+  color: var(--primary-dark);
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.Letter-body p {
+  text-indent: 1.5rem; /* Sangría inicial típica de carta */
+}
+
+/* Despedida / Cierre */
+.Letter-closing {
+  margin-top: 1.5rem;
+  text-align: right;
+  text-indent: 0 !important;
+  font-size: 1.1rem;
+  color: var(--primary-medium);
+  line-height: 1.6;
+}
+
+.Letter-closing strong {
+  color: var(--primary-dark);
+  font-size: 1.2rem;
+}
+
+/* ==========================================
+   Responsiveness de la Carta
+   ========================================== */
+@media (max-width: 768px) {
+  .Letter-card {
+    padding: 2.5rem 2rem;
+  }
+
+  .Letter-title {
+    font-size: 1.5rem;
+  }
+
+  .Letter-body {
+    font-size: 0.98rem;
+    line-height: 1.7;
+  }
+}
+
+@media (max-width: 480px) {
+  .Letter-container {
+    padding: 1rem 1rem 3rem 1rem;
+  }
+
+  .Letter-card {
+    padding: 2rem 1.25rem;
+  }
+
+  .Letter-stamp {
+    width: 60px;
+    height: 60px;
+    font-size: 2.2rem;
+  }
+
+  .Letter-title {
+    font-size: 1.35rem;
+  }
+
+  .Letter-body p {
+    text-indent: 0.8rem;
+  }
+}
+
+/*no deberias estar leyendo esto*/

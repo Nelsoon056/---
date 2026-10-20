@@ -4,6 +4,7 @@ import { LogMenu } from './components/LogMenu';
 import { Home } from './components/Home';
 import { Test } from './components/Test';
 import { Carrusel } from './components/Roulette';
+import { Letter } from './components/Letter';
 
 import './App.css'
 
@@ -43,7 +44,7 @@ function App() {
       return (
         <>
         <NavBar setPage={setPage} page={page}/>
-        <h1>ce</h1>
+        <Letter/>
         </>
       )
   }

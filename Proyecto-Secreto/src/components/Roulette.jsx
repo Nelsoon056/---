@@ -1,39 +1,53 @@
 import { useState } from 'react'
 
+import foto1 from '../assets/foto-1.jpeg';
+import foto2 from '../assets/foto-2.jpeg';
+import foto3 from '../assets/foto-3.jpeg';
+import foto4 from '../assets/foto-4.jpeg';
+import foto5 from '../assets/foto-5.jpeg';
+import foto6 from '../assets/foto-6.jpeg';
+
 export function Carrusel() {
-  // ==========================================
-  // CONFIGURACIÓN DE TUS RECUERDOS AQUÍ 📸💖
-  // ==========================================
-  // 1. Importa tus fotos reales arriba (ej: import foto1 from '../assets/foto1.jpg')
-  // 2. Reemplaza las URLs de ejemplo ('https://via.placeholder.com/...') por tus variables de foto.
-  // 3. Escribe una dedicatoria linda para cada foto.
   
   const misRecuerdos = [
     {
       id: 1,
-      // Reemplaza esto por tu foto real importada: imagen: foto1,
-      imagen: 'https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?q=80&w=800&auto=format&fit=crop', 
-      titulo: 'Donde todo empezó',
-      descripcion: 'Nuestra primera foto juntos. Ese día estaba súper nervioso, pero tu sonrisa lo hizo todo más fácil. ¡El inicio de la mejor aventura!'
+      imagen: foto1, 
+      titulo: 'Nuestra primera etapa',
+      descripcion: 'no encontre como cuadrar bien la imagen losiento'
     },
     {
       id: 2,
-      imagen: 'https://images.unsplash.com/photo-1518199266791-c309404f5f81?q=80&w=800&auto=format&fit=crop',
-      titulo: 'Esa cita inolvidable',
-      descripcion: 'Me encanta cómo nos vemos aquí. Estábamos tan felices distraídos. Cada momento a tu lado es mi favorito.'
+      imagen: foto2,
+      titulo: 'Que dindo recuerdo',
+      descripcion: 'ese día fue muy lindo y más a tu lado'
     },
     {
       id: 3,
-      imagen: 'https://images.unsplash.com/photo-1531844256296-982eeb874c4b?q=80&w=800&auto=format&fit=crop',
-      titulo: 'Un logro más',
-      descripcion: 'Celebrando juntos. Estoy tan orgulloso de la mujer increíble que eres y de todo lo que logras. ¡Siempre estaré aquí para echarte porras!'
+      imagen: foto3,
+      titulo: 'Jugar juntos me encanta',
+      descripcion: 'amo que siempre quieres jugar conmigo y que has desarrollado gustos por juegos que a mi también me encantan'
     },
-    // Puedes añadir más objetos {id, imagen, titulo, descripcion} aquí...
+    {
+      id: 4,
+      imagen: foto4,
+      titulo: 'Que lindo salir juntos',
+      descripcion: 'Siempre disfruto cada momento a tu lado, esos recuerdos se quedaran conmigo para siempre'
+    },
+    {
+      id: 5,
+      imagen: foto5,
+      titulo: 'Amo pasar tiempo a tu lado',
+      descripcion: 'Tu compañía siempre me alegra la existencia'
+    },
+    {
+      id: 6,
+      imagen: foto6,
+      titulo: 'Sigamos juntos para toda la vida',
+      descripcion: 'Te amo'
+    },
   ]
 
-  // ==========================================
-  // LÓGICA DEL CARRUSEL (No tocar si no es necesario)
-  // ==========================================
   const [currentIndex, setCurrentIndex] = useState(0)
 
   const irAlAnterior = () => {
